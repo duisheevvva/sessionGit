@@ -10,10 +10,21 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerService {
 
 
-    CustomerDao customerDao = new CustomerDaoImpl();
+    private final CustomerDao customerDao = new CustomerDaoImpl();
 
     @Override
     public List<Customer> create(Customer customer) {
         return customerDao.create(customer);
+    }
+
+    @Override
+    public List<Customer> getAll() {
+        return customerDao.getAll();
+    }
+
+    @Override
+    public Customer getById(Long id) {
+       Customer customer = customerDao.getById(id);
+       return null;
     }
 }

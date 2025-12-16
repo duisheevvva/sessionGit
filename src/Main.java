@@ -1,7 +1,12 @@
+import Service.CustomerService;
+import Service.ServiceDaoImpl.CustomerServiceImpl;
+import model.Customer;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+CustomerService customerService = new CustomerServiceImpl();
 
 
 
@@ -15,8 +20,11 @@ public class Main {
 
 
         System.out.println("Create Customer: ");
+        customerService.create(new Customer());
         System.out.println("Get All: ");
+        customerService.getAll();
         System.out.println("Get By Id : ");
+        customerService.getById(1L);
         System.out.println("Update : ");
         System.out.println("Delete : ");
         System.out.println("sortByDateOfBirth : ");
