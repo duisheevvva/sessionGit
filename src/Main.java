@@ -8,6 +8,13 @@ public class Main {
 //        Nursultan -  update,delete methods
 //        Aidana    -  sortByDateOfBirth method
 //        Adina     -  filterByGender
-          System.out.println("Test");
+
+        System.out.println("Create Customer: ");
+        System.out.println("Get All: ");
+        System.out.println("Get By Id : ");
+        System.out.println("Update : ");
+        System.out.println("Delete : ");
+        System.out.println("sortByDateOfBirth : ");
+        System.out.println("filterByGender : ");
     }
 }
